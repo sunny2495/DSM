@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: #e0e0e0; /* subtle background for the whole page */
+}
+
+.card-container {
+    width: 100%;
+    max-width: 375px;
+    padding: 20px;
+    background: linear-gradient(135deg, #6e48aa, #9d50bb); /* gradient background for the card */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+header img.logo {
+    width: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fffffe; /* slightly off-white for better contrast against deep gradients */
+}
+
+.contact-info p a {
+    color: #fffffe;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s;
+}
+
+.contact-info p a:hover {
+    color: #f0f0f0; /* light gray for hover to maintain contrast */
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fffffe; /* using an off-white for the icons to make them pop */
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
